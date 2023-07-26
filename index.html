@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font -->
+
+    <!-- font icon -->
+    <script src="https://kit.fontawesome.com/006e248122.js" crossorigin="anonymous"></script>
+    <!-- font icon -->
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="container mx-auto ">
+            <div class="flex bg-[#F85559] justify-between  py-8 items-center px-10 rounded-full">
+                <div>
+                    <ul class=" items-center justify-center text-white gap-5 hidden lg:flex text-lg">
+                        <li><a href="">Home</a></li>
+                        <li></li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+                <div class="flex  items-center gap-2">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class=" text-3xl md:text-5xl font-bold text-white ">Fruit Burst</h1>
+                </div>
+                <div class="hidden lg:flex relative">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-full lg:w-80 max-w-lg rounded-full"  />
+                    <button class="absolute top-3 right-10 "><i class="fa-solid fa-magnifying-glass text-[#7e7a7a]"></i></button>
+                </div>
+                <!--  -->
+                <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto space-y-2">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+                <!--  -->
+            </div>
+        </nav>
+        <!-- nav end here -->
+    </header>
 </body>
+
 </html>
